@@ -1,14 +1,14 @@
 <template>
   <div class="big-header">
-    <h1>{{ message }}</h1>
+    <h1>Win</h1>
     <br />
-    <router-link class="button" to="/character">Go to Character</router-link>
+    <router-link class="button" to="/">Fin du jeu</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+    data() {
     return {
       message: 'Hello Hetic'
     };

@@ -1,8 +1,9 @@
 <template>
   <div class="big-header">
-    <h1>{{ message }}</h1>
+    <h1>Game</h1>
     <br />
-    <router-link class="button" to="/character">Go to Character</router-link>
+    <router-link class="button" to="/Win">Go to Win</router-link>
+    <router-link class="button" to="/Lose">Go to Lose</router-link>
   </div>
 </template>
 

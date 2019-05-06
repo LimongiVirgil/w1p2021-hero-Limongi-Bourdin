@@ -1,8 +1,8 @@
 <template>
   <div class="big-header">
-    <h1>Page</h1>
+    <h1>Lose</h1>
     <br />
-    <router-link class="button" to="/">Go to Home</router-link>
+    <router-link class="button" to="/">Fin du jeu</router-link>
   </div>
 </template>
 
