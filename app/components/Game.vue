@@ -1,9 +1,9 @@
 <template>
   <div class="big-header">
-    <h1>Game</h1>
+    <h1>{{ message }}</h1>
     <br />
-    <router-link class="button" :to="actionA">{{ message }}</router-link>
-    <router-link class="button" :to="actionB" v-if="actionB">{{ message }}</router-link>
+    <router-link class="button" :to="actionA">{{ messageA }}</router-link>
+    <router-link class="button" :to="actionB" v-if="  actionB">{{ messageB }}</router-link>
   </div>
 </template>
 
@@ -23,6 +23,12 @@ export default {
     },
     actionB() {
       return game[this.id].actionB;
+    },
+     messageA() {
+      return game[this.id].messageA;
+    },
+     messageB() {
+      return game[this.id].messageB;
     },
   },
 };
