@@ -8,8 +8,31 @@
   </head>
   <body>
     <div id="root">
-      <router-view />
+      <transition name="black">
+          <router-view />
+      </transition>
     </div>
+    
+
+<style>      
+  body {
+    background-color: #181818;
+  }
+
+  .black-leave-active {
+    animation: toblack 3s;
+  }
+
+  .black-enter-active {
+    animation: toblack 3s;
+  }
+
+  @keyframes toblack {
+    to {
+      opacity: 0;
+    }
+  }
+</style>
 
     <script src="./app.js"></script>
   </body>
