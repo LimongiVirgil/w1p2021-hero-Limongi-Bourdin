@@ -4,7 +4,9 @@
     "messageA": "Aller voir la porte de gauche",
     "messageB": "Aller voir la porte du haut",
     "actionA": "/game/2",
-    "actionB": "/game/3"
+    "actionB": "/game/3",
+    "actionC": "/game/1",
+    "cle": "false"
   },
   "2": {
     "message": "Vous vous trouvez dans un sallon et un Zombie et face à vous",
@@ -14,59 +16,109 @@
     "actionB": "/game/1"
   },
   "3": {
-    "message": "Vous essayez d'ouvrir la porte mais elle est fermée",
-    "messageA": "faire demi-tour",
-    "messageB": "",
-    "actionA": "/game/1",
-    "actionB": ""
+    "message": "Vous entendez du bruit dérrière la porte",
+    "messageA": "ouvrir",
+    "messageB": "faire demi-tour",
+    "actionA": "/game/7",
+    "actionB": "/game/1",
+    "actionC": "/game/3",
+    "actionD": "/game/14",
+    "subtitle": "La porte est fermée",
+    "key": "false",
+    "combat": "false"
   },
   "4": {
-    "message": "Vous dégainez votre pistolet et tirez sur le Zombie. IL tombe à terre et ne semble pas se relever.",
-    "messageA": "Fouiller son cadavre",
+    "message": "Vous dégainez votre pistolet et tirez sur le Zombie. Il tombe à terre et ne semble pas se relever.",
+    "messageA": "Fouiller le cadavre",
     "messageB": "Fouiller la salle",
-    "messageC": "Faire demi-tour",
-    "actionA": "/game/2",
-    "actionB": "/game/6",
-    "actionC": "/game/2",
-    "key": "true",
-    "nom": "fal"
+    "actionA": "/game/9",
+    "actionB": "/game/8"
   },
-  "5": {
+  "win": {
     "message": "Arrivée",
     "actionA": "/game/win",
     "messageA": "continuer",
     "actionB": ""
   },
-  "6": {
+  "lose": {
     "message": "Piège mortelle",
     "actionA": "/game/lose",
     "messageA": "continuer",
     "actionB": ""
   },
   "7": {
-    "message": "La porte est ouverte",
-    "actionA": "/game/5",
-    "messageA": "Entrer",
-    "actionB": ""
+    "message": "En entrant vous êtes attraper par un Zombie",
+    "actionA": "/game/12",
+    "messageA": "Le faire tomber",
+    "actionB": "/game/13",
+    "messageB": "Prendre la statuette sur le meuble à coté"
+  },
+  "8": {
+    "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
+    "actionA": "/game/11",
+    "messageA": "Fouillez le cadavre"
+  },
+  "9": {
+    "message": "Vous avez trouvé un clé sur le cadavre",
+    "actionA": "/game/10",
+    "messageA": "Fouillez la salle"
+  },
+  "10": {
+    "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
+    "actionA": "/game/1",
+    "messageA": "Faire demi-tour"
+  },
+  "11": {
+    "message": "Vous avez trouvé un clé sur le cadavre",
+    "actionA": "/game/1",
+    "messageA": "Faire demi-tour"
+  },
+  "12": {
+    "message": "Vous arrivez à faire tomber le Zombie, mais dans sa chute il vous mort",
+    "actionA": "/game/lose",
+    "messageA": "Suivant"
+  },
+  "13": {
+    "message": "Vous prenez la statuette et frappez le Zombie avec. Il s'écroule et ne se relève pas",
+    "actionA": "/game/14",
+    "messageA": "Suivant"
+  },
+  "14": {
+    "message": "Vous êtes dans une petite salle, que voulez vous faire ?",
+    "actionA": "/game/15",
+    "messageA": "Porte délabré",
+    "actionB": "/game/16",
+    "messageB": "Porte sur votre droite'",
+    "actionC": "/game/1",
+    "messageC": "Faire demi-tour"
+  },
+  "15": {
+    "message": "Vous êtes face à la porte délabré, vous pouvez voir a trevers certain trous de la porte ce qui senble être un jardin",
+    "actionA": "",
+    "messageA": "ouvrir",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour"
+  },
+  "16": {
+    "message": "Sur la porte est inscrit bibliothèque",
+    "actionA": "/game/17",
+    "messageA": "Ouvrir",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour"
+  },
+  "17": {
+    "message": "Vous voyez deux zombies près d'un étagère",
+    "actionA": "/game/18",
+    "messageA": "Faire tomber l'étagère sur les Zombies",
+    "actionB": "/game/19",
+    "messageB": "Tuer les deux Zombies discrétement",
+    "actionC": "/game/14",
+    "messageC": "Faire demi-tour"
+  },
+  "18": {
+    "message": "Vous faites tomber l'étagére qui s'écrase violemant sur les deux Zombies dans un vacarne assourdissant",
+    "subtitle": "Le bruit que vous avez provoqué a rameuter tous les zombies du manoir, vous êtes maintenant encerclé",
+    "actionA": "/game/lose",
+    "messageA": "Suivant"
   }
 }
-
-
-/*"1": {
-  "message": "Game",
-  "messageA": "Bienvenue !",
-  "actions": [
-    {
-      "label": "allez a droite",
-      "to": 2,
-    },
-    {
-      "label": "allez a gauche",
-      "to": 3,
-    },
-    {
-      "label": "allez devant",
-      "lose": true,
-    },
-  ]
-}, */

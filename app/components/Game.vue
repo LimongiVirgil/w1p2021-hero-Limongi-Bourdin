@@ -1,13 +1,14 @@
 <template>
   <div class="big-header">
     <h1>{{ message }}</h1>
-    <br />
+    <h2>{{subtitle}}</h2>
+    <br>
     <router-link class="button" :to="actionA">{{ messageA }}</router-link>
     <br>
     <router-link class="button" :to="actionB" v-if="actionB">{{ messageB }}</router-link>
     <br>
-    <router-link class="button" :to="actionC" v-if="actionC">{{ messageC }}</router-link>
-    <h2>{{key}}</h2>
+    <router-link class="button" :to="actionC" v-if="actionC && messageC">{{ messageC }}</router-link>
+    <div>{{ temporalite }}</div>
   </div>
 </template>
 
@@ -25,7 +26,20 @@ export default {
       return game[this.id].message;
     },
     actionA() {
-      return game[this.id].actionA;
+      if (this.$route.params.id === "3") {
+        if (game[3].key === "true" && game[3].combat === "true") {
+          return game[this.id].actionD;
+        } else if (game[3].key === "true") {
+          return game[this.id].actionA;
+        } else {
+          return game[this.id].actionC;
+        }
+      } else if (this.$route.params.id === "1") {
+        if (game[this.id].cle === "true") {
+          return game[this.id].actionC;
+        }
+      }
+      return game[this.id].actionA
     },
     actionB() {
       return game[this.id].actionB;
@@ -34,9 +48,6 @@ export default {
       return game[this.id].actionC;
     },
      messageA() {
-       if (game[4].key = "true") {
-         return game[4].messageA
-       }
       return game[this.id].messageA;
     },
      messageB() {
@@ -45,14 +56,23 @@ export default {
     messageC() {
       return game[this.id].messageC;
     },
-    key() {
-      game[4].key = "true";
-      if (game[this.id].key === "true") {
-      return game[this.id].key;
-      } else {
-        return game[this.id].nom;
+    temporalite() {
+      if (this.$route.params.id === "4") {
+        if (game[3].key === "true") {
+          return game[this.id].key;
+        } else {
+          game[3].key = "true", game[1].cle = "true";
+        }
+      } else if (this.$route.params.id === "14") {
+        if (game[3].combat === "false") {
+          game[3].combat = "true",
+          game[3].message = "Plus aucun bruit ne vient de cette salle"
+        }
       }
     },
-  },
+    subtitle() {
+      return game[this.id].subtitle;
+    }
+  }
 };
 </script>

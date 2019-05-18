@@ -31,6 +31,11 @@
     line-height: 130%;
     text-align: center;
   }
+
+  h2 {
+    color: red;
+  }
+
 </style>
 
 <script>
