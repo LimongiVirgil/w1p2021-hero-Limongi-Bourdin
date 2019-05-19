@@ -88,16 +88,18 @@
     "actionA": "/game/15",
     "messageA": "Porte délabré",
     "actionB": "/game/16",
-    "messageB": "Porte sur votre droite'",
+    "messageB": "Porte sur votre droite",
     "actionC": "/game/1",
-    "messageC": "Faire demi-tour"
+    "messageC": "Faire demi-tour",
+    "passage": "false"
   },
   "15": {
     "message": "Vous êtes face à la porte délabré, vous pouvez voir a trevers certain trous de la porte ce qui senble être un jardin",
     "actionA": "",
     "messageA": "ouvrir",
     "actionB": "/game/14",
-    "messageB": "Faire demi-tour"
+    "messageB": "Faire demi-tour",
+    "subtitle": "La porte est coincé"
   },
   "16": {
     "message": "Sur la porte est inscrit bibliothèque",
@@ -120,5 +122,45 @@
     "subtitle": "Le bruit que vous avez provoqué a rameuter tous les zombies du manoir, vous êtes maintenant encerclé",
     "actionA": "/game/lose",
     "messageA": "Suivant"
+  },
+  "19": {
+    "message": "Vous tuez les zombies sans aucun bruit. Plus loin vous voyez un homme gémissant",
+    "actionA": "/game/20",
+    "messageA": "S'approcher de l'homme",
+    "actionB": "/game/21",
+    "messageB": "Contourner l'homme",
+    "actionC": "/game/14",
+    "messageC": "Faire demi-tour"
+  },
+  "20": {
+    "message": "L'homme devant vous est entrain de mourrir, il a des morsures partout. A côté de lui gît un chien et une hache",
+    "actionA": "/game/21",
+    "messageA": "Passer votre chemin",
+    "actionB": "/game/21",
+    "messageB": "Achever l'homme",
+    "actionC": "/game/22",
+    "messageC": "Ramassez la hache"
+  },
+  "21": {
+    "message": "Vous êtes de l'autre côté de la bibliothèque devant une porte en sale état, dérriére la porte vous entendez des pleures",
+    "subtitle": "Elle est bloqué, il vous faut quelque chose pour l'enfoncer",
+    "actionA": "/game/22",
+    "messageA": "Ouvrir",
+    "actionB": "/game/20",
+    "messageB": "Faire demi-tour"
+  },
+  "22": {
+    "message": "Vous avez ramasser la hache, que voulez vous faire avec l'homme",
+    "actionA": "/game/21",
+    "messageA": "Passer votre chemin",
+    "actionB": "/game/23",
+    "messageB": "Achever l'homme"
+  },
+  "23": {
+    "message": "Vous achevez l'homme en lui mettant un coup de hache dans le crane",
+    "actionA": "/game/21",
+    "messageA": "Continuez votre chemin",
+    "actionB": "/game/14",
+    "messageB": "Faire demi-tour"
   }
 }

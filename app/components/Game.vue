@@ -42,6 +42,12 @@ export default {
       return game[this.id].actionA
     },
     actionB() {
+      if (this.$route.params.id === "14") {
+        if (game[this.id].passage === "true") {
+          game[this.id].actionB = "/game/19"
+          return game[this.id].actionB
+        }
+      }
       return game[this.id].actionB;
     },
     actionC() {
@@ -68,11 +74,23 @@ export default {
           game[3].combat = "true",
           game[3].message = "Plus aucun bruit ne vient de cette salle"
         }
+      } else if (this.$route.params.id === "19") {
+        if (game[14].passage === "false") {
+          game[14].passage = "true"
+        }
       }
     },
     subtitle() {
+      if (this.$route.params.id === "3") {
+        if (game[3].key === "false") {
+          return game[this.id].subtitle
+        } else {
+          game[this.id].subtitle = " "
+          return game[this.id].subtitle
+        }
+      }
       return game[this.id].subtitle;
     }
-  }
+  },
 };
 </script>
