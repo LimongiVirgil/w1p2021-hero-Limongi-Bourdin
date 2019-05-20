@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="root">
-      <transition name="black">
+      <transition name="black" mode="out-in">
           <router-view />
       </transition>
     </div>
@@ -20,11 +20,11 @@
   }
 
   .black-leave-active {
-    animation: toblack 1s;
+    animation: toblack 1s ;
   }
 
   .black-enter-active {
-    animation: toblack 1s ease reverse;
+    animation: toblack 1s reverse;
   }
 
   @keyframes toblack {

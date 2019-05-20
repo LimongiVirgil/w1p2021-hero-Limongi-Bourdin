@@ -9,14 +9,15 @@
     "actionC": "/game/1",
     "actionD": "",
     "cle": "false",
-    "image": "1.jpg"
+    "image": "image1"
   },
   "2": {
     "message": "Vous vous trouvez dans un sallon et un Zombie et face à vous",
     "messageA": "Attaquer",
     "messageB": "faire demi-tour",
     "actionA": "/game/4",
-    "actionB": "/game/1"
+    "actionB": "/game/1",
+    "image": "image2"
   },
   "3": {
     "message": "Vous entendez du bruit dérrière la porte",
@@ -28,14 +29,16 @@
     "actionD": "/game/14",
     "subtitle": "La porte est fermée",
     "key": "false",
-    "combat": "false"
+    "combat": "false",
+    "image": "image3"
   },
   "4": {
     "message": "Vous dégainez votre pistolet et tirez sur le Zombie. Il tombe à terre et ne semble pas se relever.",
     "messageA": "Fouiller le cadavre",
     "messageB": "Fouiller la salle",
     "actionA": "/game/9",
-    "actionB": "/game/8"
+    "actionB": "/game/8",
+    "image": "image2"
   },
   "win": {
     "message": "Vous avez gagné",
@@ -47,44 +50,53 @@
     "message": "Vous avez perdu",
     "subtitle": "",
     "actionA": "/game/1",
-    "messageA": "Recommencer"
+    "messageA": "Recommencer",
+    "image": "image9"
+    
   },
   "7": {
     "message": "En entrant vous êtes attraper par un Zombie",
     "actionA": "/game/12",
     "messageA": "Le faire tomber",
     "actionB": "/game/13",
-    "messageB": "Prendre la statuette sur le meuble à coté"
+    "messageB": "Prendre la statuette sur le meuble à coté",
+    "image": "image4"
   },
   "8": {
     "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
     "actionA": "/game/11",
-    "messageA": "Fouillez le cadavre"
+    "messageA": "Fouillez le cadavre",
+    "image": "image2"
   },
   "9": {
     "message": "Vous avez trouvé un clé sur le cadavre",
     "actionA": "/game/10",
-    "messageA": "Fouillez la salle"
+    "messageA": "Fouillez la salle",
+    "image": "image2"
   },
   "10": {
     "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
     "actionA": "/game/1",
-    "messageA": "Faire demi-tour"
+    "messageA": "Faire demi-tour",
+    "image": "image2"
   },
   "11": {
     "message": "Vous avez trouvé un clé sur le cadavre",
     "actionA": "/game/1",
-    "messageA": "Faire demi-tour"
+    "messageA": "Faire demi-tour",
+    "image": "image2"
   },
   "12": {
     "message": "Vous arrivez à faire tomber le Zombie, mais dans sa chute il vous mort",
     "actionA": "/game/lose",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image4"
   },
   "13": {
     "message": "Vous prenez la statuette et frappez le Zombie avec. Il s'écroule et ne se relève pas",
     "actionA": "/game/14",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image4"
   },
   "14": {
     "message": "Vous êtes dans une petite salle, que voulez vous faire ?",
@@ -94,7 +106,8 @@
     "messageB": "Porte sur votre droite",
     "actionC": "/game/1",
     "messageC": "Faire demi-tour",
-    "passage": "false"
+    "passage": "false",
+    "image": "image4"
   },
   "15": {
     "message": "Vous êtes face à la porte délabré, vous pouvez voir a trevers certain trous de la porte ce qui senble être un jardin",
@@ -102,14 +115,16 @@
     "messageA": "ouvrir",
     "actionB": "/game/14",
     "messageB": "Faire demi-tour",
-    "subtitle": "La porte est coincé"
+    "subtitle": "La porte est coincé",
+    "image": "image6"
   },
   "16": {
     "message": "Sur la porte est inscrit bibliothèque",
     "actionA": "/game/17",
     "messageA": "Ouvrir",
     "actionB": "/game/14",
-    "messageB": "Faire demi-tour"
+    "messageB": "Faire demi-tour",
+    "image": "image5"
   },
   "17": {
     "message": "Vous voyez deux zombies près d'une étagère",
@@ -118,13 +133,15 @@
     "actionB": "/game/19",
     "messageB": "Tuer les deux Zombies discrétement",
     "actionC": "/game/14",
-    "messageC": "Faire demi-tour"
+    "messageC": "Faire demi-tour",
+    "image": "image7"
   },
   "18": {
     "message": "Vous faites tomber l'étagére qui s'écrase violemant sur les deux Zombies dans un vacarne assourdissant",
     "subtitle": "Le bruit que vous avez provoqué a rameuter tous les zombies du manoir, vous êtes maintenant encerclé",
     "actionA": "/game/lose",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image7"
   },
   "19": {
     "message": "Vous tuez les zombies sans aucun bruit. Plus loin vous voyez un homme gémissant",
@@ -133,7 +150,8 @@
     "actionB": "/game/21",
     "messageB": "Contourner l'homme",
     "actionC": "/game/14",
-    "messageC": "Faire demi-tour"
+    "messageC": "Faire demi-tour",
+    "image": "image7"
   },
   "20": {
     "message": "L'homme devant vous est entrain de mourrir, il a des morsures partout. A côté de lui gît un chien et une hache",
@@ -144,7 +162,8 @@
     "actionC": "/game/22",
     "messageC": "Ramassez la hache",
     "actionD": "/game/14",
-    "messageD": "Faire demi-tour"
+    "messageD": "Faire demi-tour",
+    "image": "image7"
   },
   "21": {
     "message": "Vous êtes de l'autre côté de la bibliothèque devant une porte en sale état, dérriére la porte vous entendez des pleures",
@@ -153,14 +172,16 @@
     "messageA": "Ouvrir",
     "actionB": "/game/20",
     "messageB": "Faire demi-tour",
-    "hache": "false"
+    "hache": "false",
+    "image": "image7"
   },
   "22": {
     "message": "Vous avez ramasser la hache, que voulez vous faire avec l'homme",
     "actionA": "/game/21",
     "messageA": "Passer votre chemin",
     "actionB": "/game/23",
-    "messageB": "Achever l'homme"
+    "messageB": "Achever l'homme",
+    "image": "image7"
   },
   "23": {
     "message": "Vous achevez l'homme en lui mettant un coup de hache dans le crane",
@@ -168,29 +189,34 @@
     "messageA": "Continuez votre chemin",
     "actionB": "/game/14",
     "messageB": "Faire demi-tour",
-    "mort": "false"
+    "mort": "false",
+    "image": "image7"
   },
   "24": {
     "message": "Dans la salle se trouve la femme disparu que vous recherchiez ",
     "actionA": "",
     "messageA": "La rassurer et partir avec elle",
-    "fille": "false"
+    "fille": "false",
+    "image": "image8"
   },
   "25": {
     "message": "L'homme gémissant est mort et s'est transformé en Zombie",
     "actionA": "/game/26",
-    "messageA": "Attaquer avec votre hache"
+    "messageA": "Attaquer avec votre hache",
+    "image": "image7"
   },
   "26": {
     "message": "Votre hache reste coincé dans sa clavicule. Il vous mort",
     "actionA": "/game/lose",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image7"
   },
   "27": {
     "message": "Vous avez utilisé le peu de balle que vous aviez pour achevez l'homme",
     "actionA": "/game/20",
     "messageA": "Suivant",
-    "mort": "false"
+    "mort": "false",
+    "image": "image7"
   },
   "28": {
     "message": "Vous entrez dans un jardin à l'arrière du manoir",

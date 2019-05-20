@@ -1,5 +1,5 @@
 <template>
-  <div class="big-header">
+  <div class="big-header image1" :class="image" >
     <h1>{{ message }}</h1>
     <h2>{{ subtitle }}</h2>
     <br>

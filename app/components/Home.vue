@@ -1,5 +1,5 @@
 <template>
-  <div class="big-header">
+  <div class="menu">
     <div class="content-home">
       <h1>{{ messageA }}</h1>
       <br><br>
@@ -12,10 +12,26 @@
 </template>
 
 <style>
+  .menu {
+    background: url('../assets/images/manoir.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    color: white;
+  }
+
   .content-home {
     width: 60vw;
     margin: auto;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
