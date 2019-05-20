@@ -5,7 +5,7 @@
       <br />
       <router-link class="button" to="/game/1">Policier</router-link>
       <br>
-      <router-link class="button" to="">Randonneur</router-link>
+      <router-link class="button" to="/game/28">Randonneur</router-link>
     <div>
   </div>
 </template>

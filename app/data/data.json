@@ -112,7 +112,7 @@
     "messageB": "Faire demi-tour"
   },
   "17": {
-    "message": "Vous voyez deux zombies près d'un étagère",
+    "message": "Vous voyez deux zombies près d'une étagère",
     "actionA": "/game/18",
     "messageA": "Faire tomber l'étagère sur les Zombies",
     "actionB": "/game/19",
@@ -191,5 +191,73 @@
     "actionA": "/game/20",
     "messageA": "Suivant",
     "mort": "false"
-  }
+  },
+  "28": {
+    "message": "Vous entrez dans un jardin à l'arrière du manoir",
+    "actionA": "/game/33",
+    "messageA": "aller vers la porte",
+    "actionB": "/game/29",
+    "messageB": "aller à droite"
+  },
+  "29": {
+    "message": "Vous avancer a travers la végétations abondante du jardin",
+    "actionA": "/game/30",
+    "messageA": "Essayez d'ouvrir une fenêtre du manoir",
+    "actionB": "/game/31",
+    "messageB": "Aller vers le cabanon",
+    "actionC" : "/game/28",
+    "messageC": "Faire demi-tour"
+  },
+  "30": {
+    "message": "La fenêtre du manoir est vielle et usé",
+    "subtitle": "La fenêtre est bloquée",
+    "messageA": "Faire demi-tour",
+    "actionA": "/game/29"
+  },
+  "31": {
+    "message": "Vous entrez dans un vieux cabanons ou plein d'outil sont entreposé",
+    "messageA": "Fouillez le cabanon",
+    "actionA": "/game/32",
+    "messageB": "Faire demi-tour",
+    "actionB": "/game/29"
+  },
+  "32": {
+    "message": "Vous avez trouvez une vielle hache",
+    "messageA": "Faire demi-tour",
+    "actionA": "/game/29"
+  },
+  "33": {
+    "message": "Face à vous une porte délabré qui tombe en morceau",
+    "messageA": "Ouvrir",
+    "actionA": "/game/34",
+    "messageB": "Faire demi-tour",
+    "actionB": "/game/28"
+  },
+  "34": {
+    "message": "Vous entrer dans la manoir et vous arrivez dans une cuisine où se trouve un Zombie",
+    "actionA": "/game/35",
+    "messageA": "Le tuer avec la hache",
+    "actionB": "/gmae/36",
+    "messageB": "Passer la salle discrétement"
+  },
+  "35": {
+    "message": "Vous lui asséner un coup de hache. il arrive a vous mordre le bras",
+    "actionA": "/game/lose",
+    "messageA": "Continuer"
+  },
+  "36": {
+    "message": "Vous arrivez à passer la salle discrétement et vous finnissez par arriver devant des escalier avec une porte en haut",
+    "actionA": "/game/37",
+    "messageA": "Monter"
+  },
+  "37": {
+    "message": "Vous arrivez dans une bibliothèque ou se trouve deux zombies",
+    "actionA": "/game/18",
+    "messageA": "Faire tomber l'étagère sur les Zombies",
+    "actionB": "/game/38",
+    "messageB": "Tuer les deux Zombies discrétement"
+  },
+  "38": {
+    
+  } 
 }
