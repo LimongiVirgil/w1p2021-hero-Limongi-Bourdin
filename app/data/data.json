@@ -223,7 +223,8 @@
     "actionA": "/game/33",
     "messageA": "aller vers la porte",
     "actionB": "/game/29",
-    "messageB": "aller à droite"
+    "messageB": "aller à droite",
+    "image": "image10"
   },
   "29": {
     "message": "Vous avancer a travers la végétations abondante du jardin",
@@ -232,7 +233,8 @@
     "actionB": "/game/31",
     "messageB": "Aller vers le cabanon",
     "actionC" : "/game/28",
-    "messageC": "Faire demi-tour"
+    "messageC": "Faire demi-tour",
+    "image": "image11"
   },
   "30": {
     "message": "La fenêtre du manoir est vielle et usé",
@@ -263,7 +265,7 @@
     "message": "Vous entrer dans la manoir et vous arrivez dans une cuisine où se trouve un Zombie",
     "actionA": "/game/35",
     "messageA": "Le tuer avec la hache",
-    "actionB": "/gmae/36",
+    "actionB": "/game/36",
     "messageB": "Passer la salle discrétement"
   },
   "35": {
@@ -281,9 +283,72 @@
     "actionA": "/game/18",
     "messageA": "Faire tomber l'étagère sur les Zombies",
     "actionB": "/game/38",
-    "messageB": "Tuer les deux Zombies discrétement"
+    "messageB": "Tuer les deux Zombies discrétement",
+    "image": "image7"
   },
   "38": {
-    
-  } 
+    "message": "Vous avez réussi a tuer les deux zombies discrétement",
+    "actionA": "/game/39",
+    "messageA": "Avancé plus loin dans la bibliothèque",
+    "image": "image7"
+  },
+  "39": {
+    "message": "Vous rencontrez de nouveau un zombie",
+    "actionA": "/game/40",
+    "messageA": "Passer discrétement",
+    "actionB": "/game/42",
+    "messageB": "Tuer le Zombie à la hache",
+    "image": "image7"
+  },
+  "40": {
+    "message": "Vous êtes passé sans vous faire remarquer",
+    "actionA": "/game/41",
+    "messageA": "Continuer à avancer",
+    "image": "image7"
+  },
+  "41": {
+    "message": "Vous arrivé devant une porte fermée",
+    "subtitle": "Vous entendez des pleure dérriere la porte",
+    "actionA": "/game/43",
+    "messageA": "Enfoncer avec la hache",
+    "image": "image5"
+  },
+  "42": {
+    "message": "Vous avez tué le Zombie avec votre hache sans difficulté",
+    "actionA": "/game/41",
+    "messageA": "Continuer à avance",
+    "image": "image7"
+  },
+  "43": {
+    "message": "En enfoncant la porte votre hache s'est brisé. Vous voyez dans la salle une femme recroqueviller sur elle même dans un coin de la pièce",
+    "actionA": "/game/44",
+    "messageA": "Avancé vers elle",
+    "image": "image8"
+  },
+  "44": {
+    "message": "La jeune femme vous à vu et semble soulagé",
+    "actionA": "",
+    "messageA": "Faire demi-tour",
+    "image": "image8"
+  },
+  "45": {
+    "message": "Vous êtes face au Zombie que vous avez évitez, mais vous n'avez plus rien pour vous défendre",
+    "actionA": "/game/46",
+    "messageA": "Lui lancer des livres",
+    "actionB": "/game/47",
+    "messageB": "le frapper avec une lampe de la bibliothèque",
+    "image": "image7"
+  },
+  "46": {
+    "message": "Les livres n'ont pas l'air de lui faire du mal. Il vous attrape peu après et vous mort",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image7"
+  }, 
+  "47": {
+    "message": "En le frappant la lampe se brise et na eu aucun effet. Il vous mort peu après.",
+    "actionA": "/game/lose",
+    "messageA": "Suivant",
+    "image": "image7"
+  }
 }
