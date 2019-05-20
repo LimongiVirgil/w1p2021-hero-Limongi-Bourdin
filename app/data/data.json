@@ -3,10 +3,13 @@
     "message": "Vous vous trouvez dans le salle d'entrer",
     "messageA": "Aller voir la porte de gauche",
     "messageB": "Aller voir la porte du haut",
+    "messageD": "Sortir du manoir",
     "actionA": "/game/2",
     "actionB": "/game/3",
     "actionC": "/game/1",
-    "cle": "false"
+    "actionD": "",
+    "cle": "false",
+    "image": "1.jpg"
   },
   "2": {
     "message": "Vous vous trouvez dans un sallon et un Zombie et face à vous",
@@ -35,16 +38,16 @@
     "actionB": "/game/8"
   },
   "win": {
-    "message": "Arrivée",
-    "actionA": "/game/win",
-    "messageA": "continuer",
-    "actionB": ""
+    "message": "Vous avez gagné",
+    "subtitle": "Vous avez réussi a sortir du manoir avec la disparue",
+    "actionA": "/game/1",
+    "messageA": "Recommencer"
   },
   "lose": {
-    "message": "Piège mortelle",
-    "actionA": "/game/lose",
-    "messageA": "continuer",
-    "actionB": ""
+    "message": "Vous avez perdu",
+    "subtitle": "",
+    "actionA": "/game/1",
+    "messageA": "Recommencer"
   },
   "7": {
     "message": "En entrant vous êtes attraper par un Zombie",
@@ -136,18 +139,21 @@
     "message": "L'homme devant vous est entrain de mourrir, il a des morsures partout. A côté de lui gît un chien et une hache",
     "actionA": "/game/21",
     "messageA": "Passer votre chemin",
-    "actionB": "/game/21",
+    "actionB": "/game/27",
     "messageB": "Achever l'homme",
     "actionC": "/game/22",
-    "messageC": "Ramassez la hache"
+    "messageC": "Ramassez la hache",
+    "actionD": "/game/14",
+    "messageD": "Faire demi-tour"
   },
   "21": {
     "message": "Vous êtes de l'autre côté de la bibliothèque devant une porte en sale état, dérriére la porte vous entendez des pleures",
     "subtitle": "Elle est bloqué, il vous faut quelque chose pour l'enfoncer",
-    "actionA": "/game/22",
+    "actionA": "",
     "messageA": "Ouvrir",
     "actionB": "/game/20",
-    "messageB": "Faire demi-tour"
+    "messageB": "Faire demi-tour",
+    "hache": "false"
   },
   "22": {
     "message": "Vous avez ramasser la hache, que voulez vous faire avec l'homme",
@@ -161,6 +167,29 @@
     "actionA": "/game/21",
     "messageA": "Continuez votre chemin",
     "actionB": "/game/14",
-    "messageB": "Faire demi-tour"
+    "messageB": "Faire demi-tour",
+    "mort": "false"
+  },
+  "24": {
+    "message": "Dans la salle se trouve la femme disparu que vous recherchiez ",
+    "actionA": "",
+    "messageA": "La rassurer et partir avec elle",
+    "fille": "false"
+  },
+  "25": {
+    "message": "L'homme gémissant est mort et s'est transformé en Zombie",
+    "actionA": "/game/26",
+    "messageA": "Attaquer avec votre hache"
+  },
+  "26": {
+    "message": "Votre hache reste coincé dans sa clavicule. Il vous mort",
+    "actionA": "/game/lose",
+    "messageA": "Suivant"
+  },
+  "27": {
+    "message": "Vous avez utilisé le peu de balle que vous aviez pour achevez l'homme",
+    "actionA": "/game/20",
+    "messageA": "Suivant",
+    "mort": "false"
   }
 }
