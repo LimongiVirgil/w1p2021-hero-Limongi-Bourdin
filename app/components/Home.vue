@@ -63,7 +63,7 @@ export default {
   data() {
     return {
       messageA: 'Zombie Mansion',
-      messageB: "Zombie mansion est un jeu où votre personnage sera plongé dans l'épouvante. Quelque soit le personnage que vous choisirez vous devrez traverser de multiple épreuves afin de compléter vos objectifs respectifs. Mais attention le moindre faux pas vous conduira vers la mort."
+      messageB: "Zombie mansion est un jeu où votre personnage sera plongé dans l'épouvante. Quelque soit le personnage que vous choisirez vous devrez traverser de multiples épreuves afin de compléter vos objectifs respectifs. Mais attention le moindre faux pas vous coûtera la vie."
     };
   }
 };
