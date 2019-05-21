@@ -134,6 +134,18 @@ export default {
         game[22].actionB = "/game/14",
         game[22].messageB = "Faire demi-tour",
         game[27].mort = "true"
+      } else if (this.$route.params.id === "32") {
+        if (game[this.id].hache === "false") {
+          game[this.id].hache = "true",
+          game[this.id].message = "Vous avez déja fouillez cette endroit",
+          game[33].actionA = "/game/34",
+          game[33].messageA = "Enfoncer la porte",
+          game[33].subtitle = "Votre hache peut l'enfoncer"
+        }
+      } else if (this.$route.params.id === "40") {
+        game[44].actionA = "/game/45"
+      } else if (this.$route.params.id === "42") {
+        game[44].actionA = "/game/48"
       }
     },
     subtitle() {
@@ -150,6 +162,14 @@ export default {
         game["lose"].subtitle = "Vous avez réussi à tuer un ou deux zombie mais les autres on eu raison de vous, il ne reste maintenant plus rien de vous."
       } else if (this.$route.params.id === "26") {
         game["lose"].subtitle = "Finalement vous auriez peut-être du le tuer"
+      } else if (this.$route.params.id === "35") {
+        game["lose"].subtitle = "Faites plus attention la prochaine fois"
+      } else if (this.$route.params.id === "46") {
+        game["lose"].subtitle = "Les mots font 'parfois' plus mal que les coups"
+      } else if (this.$route.params.id === "46") {
+        game["lose"].subtitle = ""
+      } else if (this.$route.params.id === "46") {
+        game["lose"].subtitle = ""
       }
       return game[this.id].subtitle;
     }

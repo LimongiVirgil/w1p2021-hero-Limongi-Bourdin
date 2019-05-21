@@ -11,6 +11,52 @@ textarea {
   font-family: 'Roboto';
 }
 
+.pane-leave-active,
+.pane-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+  }
+}
+
+.pane-leave-active {
+  animation: fake 1s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter 1s ease 1s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
 .big-header {
   background-color: $hetic-green;
   height: 100vh;
@@ -83,12 +129,6 @@ textarea {
   background-size: cover;
 }
 
-.image9 {
-  background: url('../images/main.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .image10 {
   background: url('../images/jardin-re.png');
   background-repeat: no-repeat;
@@ -101,14 +141,44 @@ textarea {
   background-size: cover;
 }
 
-/* .image12 {
-  background: url('../images/main.png');
+ .image12 {
+  background: url('../images/re-cabane.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image13 {
-  background: url('../images/main.png');
+  background: url('../images/fenetre-vide.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
+
+.image15 {
+  background: url('../images/escalier.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image16 {
+  background: url('../images/cuisine.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image17 {
+  background: url('../images/doubleDoor-re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image18 {
+  background: url('../images/gameover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image19 {
+  background: url('../images/persos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

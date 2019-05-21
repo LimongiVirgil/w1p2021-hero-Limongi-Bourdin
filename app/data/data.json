@@ -51,7 +51,7 @@
     "subtitle": "",
     "actionA": "/game/1",
     "messageA": "Recommencer",
-    "image": "image9"
+    "image": "image18"
     
   },
   "7": {
@@ -240,43 +240,52 @@
     "message": "La fenêtre du manoir est vielle et usé",
     "subtitle": "La fenêtre est bloquée",
     "messageA": "Faire demi-tour",
-    "actionA": "/game/29"
+    "actionA": "/game/29",
+    "image": "image13"
   },
   "31": {
     "message": "Vous entrez dans un vieux cabanons ou plein d'outil sont entreposé",
     "messageA": "Fouillez le cabanon",
     "actionA": "/game/32",
     "messageB": "Faire demi-tour",
-    "actionB": "/game/29"
+    "actionB": "/game/29",
+    "image": "image12"
   },
   "32": {
     "message": "Vous avez trouvez une vielle hache",
     "messageA": "Faire demi-tour",
-    "actionA": "/game/29"
+    "actionA": "/game/29",
+    "image": "image12",
+    "hache": "false"
   },
   "33": {
     "message": "Face à vous une porte délabré qui tombe en morceau",
+    "subtitle": "Vous pouvez peut-être l'enfoncer avec un objet",
     "messageA": "Ouvrir",
-    "actionA": "/game/34",
+    "actionA": "",
     "messageB": "Faire demi-tour",
-    "actionB": "/game/28"
+    "actionB": "/game/28",
+    "image": "image17"
   },
   "34": {
     "message": "Vous entrer dans la manoir et vous arrivez dans une cuisine où se trouve un Zombie",
     "actionA": "/game/35",
     "messageA": "Le tuer avec la hache",
     "actionB": "/game/36",
-    "messageB": "Passer la salle discrétement"
+    "messageB": "Passer la salle discrétement",
+    "image": "image16"
   },
   "35": {
     "message": "Vous lui asséner un coup de hache. il arrive a vous mordre le bras",
     "actionA": "/game/lose",
-    "messageA": "Continuer"
+    "messageA": "Continuer",
+    "image": "image16"
   },
   "36": {
-    "message": "Vous arrivez à passer la salle discrétement et vous finnissez par arriver devant des escalier avec une porte en haut",
+    "message": "Vous arrivez à passer la salle discrétement et vous finissez par arriver devant des escalier avec une porte en haut",
     "actionA": "/game/37",
-    "messageA": "Monter"
+    "messageA": "Monter",
+    "image": "image15"
   },
   "37": {
     "message": "Vous arrivez dans une bibliothèque ou se trouve deux zombies",
@@ -326,7 +335,7 @@
     "image": "image8"
   },
   "44": {
-    "message": "La jeune femme vous à vu et semble soulagé",
+    "message": "La jeune femme vous à vu et semble soulagé. Vous lui dite de vous suivre",
     "actionA": "",
     "messageA": "Faire demi-tour",
     "image": "image8"
@@ -350,5 +359,40 @@
     "actionA": "/game/lose",
     "messageA": "Suivant",
     "image": "image7"
+  },
+  "48": {
+    "message": "Vous repassez par la bibliothèque",
+    "actionA": "/game/49",
+    "messageA": "Suivant",
+    "image": "image7"
+  },
+  "49": {
+    "message": "Vous repassez par les escalier pour enfin arrivé dans la cuisine",
+    "actionA": "/game/50",
+    "messageA": "Suivant",
+    "image": "image15"
+  },
+  "50": {
+    "message": "Dans la cuisine vous retrouvez le Zombie que vous aviez passé discrétement",
+    "actionA": "/game/51",
+    "messageA": "Faire diversion avec un objet",
+    "actionB": "/game/52",
+    "messageB": "passer dérrière un meuble",
+    "image": "image16"
+  },
+  "51": {
+    "message": "Vous lancer le premier objet qui vous tombe sous la main. Vous arrivez à passer.",
+    "actionA": "/game/win",
+    "messageA": "Sortir"
+  },
+  "52": {
+    "message": "En passant dérrière le meuble vous faites tombé un objet, le bruit attire le zombie vers vous",
+    "actionA": "/game/53",
+    "messageA": "Suivant"
+  },
+  "53": {
+    "message": "Vous n'avez plus d'arme pour vous défendre. Le zombie fini par vous mordre",
+    "actionA": "/game/lose",
+    "messageA": "Suivant"
   }
 }

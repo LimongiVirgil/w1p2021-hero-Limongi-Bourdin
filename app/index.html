@@ -8,17 +8,20 @@
   </head>
   <body>
     <div id="root">
-      <transition name="black" mode="out-in">
+      <transition name="pane">
           <router-view />
       </transition>
     </div>
     
     <audio src="./assets/music/mysterious.mp3" preload="metada" loop id="sound"></audio>
 <style>      
+
   body {
     background-color: #181818;
   }
 
+
+/*
   .black-leave-active {
     animation: toblack 1s ;
   }
@@ -31,7 +34,7 @@
     to {
       opacity: 0;
     }
-  }
+  } */
 </style>
 
     <script src="./app.js"></script>

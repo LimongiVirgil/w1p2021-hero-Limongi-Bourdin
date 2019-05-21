@@ -52,6 +52,10 @@
     color: red;
   }
 
+  h1 {
+    background-color: black;
+  }
+
 </style>
 
 <script>
