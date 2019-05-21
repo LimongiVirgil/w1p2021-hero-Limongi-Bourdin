@@ -44,7 +44,8 @@
     "message": "Vous avez gagné",
     "subtitle": "Vous avez réussi a sortir du manoir avec la disparue",
     "actionA": "/game/1",
-    "messageA": "Recommencer"
+    "messageA": "Recommencer",
+    "image": "image9"
   },
   "lose": {
     "message": "Vous avez perdu",

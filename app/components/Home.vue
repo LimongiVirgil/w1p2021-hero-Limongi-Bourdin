@@ -6,7 +6,7 @@
       <span>{{ messageB }}</span>
       <br>
       <br />
-        <router-link class="button" to="/character">Choisissez des personnages</router-link>
+        <router-link class="button" to="/character">Choix des personnages</router-link>
     </div>
   </div>
 </template>
