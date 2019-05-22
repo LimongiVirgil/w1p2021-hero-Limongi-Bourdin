@@ -1,11 +1,8 @@
 <template>
   <div class="perso">
     <div class="content-caractere">
-      <h1>{{ message }}</h1>
-      <br />
-      <router-link class="button" to="/game/1">Policier</router-link>
-      <br>
-      <router-link class="button" to="/game/28">Promeneur</router-link>
+      <router-link class="button1" to="/game/1">Policier</router-link>
+      <router-link class="button2" to="/game/28">Promeneur</router-link>
     <div>
   </div>
 </template>
@@ -19,8 +16,8 @@
     width: 100vw;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
     flex-wrap: wrap;
     flex-direction: column;
 
@@ -28,25 +25,29 @@
   }
 
   .content-caractere {
-    margin: auto;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin-top: 36%;
+    display: flex;
   }
 
-  .content-caractere h1 {
-    font-size: 30px;
+  .button1 {
+    color: white;
+    text-decoration: none;
+    background: rgb(122, 12, 12);
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    margin-left: 23%
+  }
+
+  .button2 {
+    color: white;
+    text-decoration: none;
+    background: rgb(122, 12, 12);
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    margin-left: 42%
   }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      message: 'Choisissez votre personnage'
-    };
-  }
-};
-</script>

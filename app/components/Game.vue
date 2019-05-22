@@ -32,13 +32,15 @@ export default {
         if (game[3].key === "true" && game[3].combat === "true") {
           return game[this.id].actionD;
         } else if (game[3].key === "true") {
-          return game[this.id].actionA;
-        } else {
-          return game[this.id].actionC;
+          return game[this.id].actionA = "/game/7" , game[this.id].actionA;
         }
       } else if (this.$route.params.id === "1") {
         if (game[this.id].cle === "true") {
-          return game[this.id].actionC;
+          game[2].message = "Vous n'avez plus rien à faire dans cette salle",
+          game[2].messageA = "Faire demi-tour",
+          game[2].actionA = "/game/1",
+          game[2].messageB = "",
+          game[2].actionB = "";
         }
       } else if (this.$route.params.id === "21") {
         if (game[this.id].hache === "true") {
@@ -163,13 +165,17 @@ export default {
       } else if (this.$route.params.id === "26") {
         game["lose"].subtitle = "Finalement vous auriez peut-être du le tuer"
       } else if (this.$route.params.id === "35") {
-        game["lose"].subtitle = "Faites plus attention la prochaine fois"
+        game["lose"].subtitle = "Faites plus attention la prochaine fois",
+        game["lose"].actionA = "/game/28"
       } else if (this.$route.params.id === "46") {
-        game["lose"].subtitle = "Les mots font 'parfois' plus mal que les coups"
-      } else if (this.$route.params.id === "46") {
-        game["lose"].subtitle = ""
-      } else if (this.$route.params.id === "46") {
-        game["lose"].subtitle = ""
+        game["lose"].subtitle = "Les mots font 'parfois' plus mal que les coups";
+        game["lose"].actionA = "/game/28"
+      } else if (this.$route.params.id === "47") {
+        game["lose"].subtitle = "Vous êtes mort",
+        game["lose"].actionA = "/game/28"
+      } else if (this.$route.params.id === "53") {
+        game["lose"].subtitle = "La discrétion ne marche pas à tous les coups",
+        game["lose"].actionA = "/game/28"
       }
       return game[this.id].subtitle;
     }
