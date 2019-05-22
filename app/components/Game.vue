@@ -39,6 +39,7 @@ export default {
           game[2].message = "Vous n'avez plus rien à faire dans cette salle",
           game[2].messageA = "Faire demi-tour",
           game[2].actionA = "/game/1",
+          game[2].image = "image2",
           game[2].messageB = "",
           game[2].actionB = "";
         }

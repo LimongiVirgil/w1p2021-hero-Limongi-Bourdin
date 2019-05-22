@@ -16,7 +16,7 @@
     "messageB": "faire demi-tour",
     "actionA": "/game/4",
     "actionB": "/game/1",
-    "image": "image2"
+    "image": "image23"
   },
   "3": {
     "message": "Vous entendez du bruit derrière la porte",
@@ -36,7 +36,7 @@
     "messageB": "Fouiller la salle",
     "actionA": "/game/9",
     "actionB": "/game/8",
-    "image": "image2"
+    "image": "image23"
   },
   "win": {
     "message": "Vous avez gagné",
@@ -59,7 +59,7 @@
     "messageA": "Le faire tomber",
     "actionB": "/game/13",
     "messageB": "Prendre la statuette sur le meuble à côté",
-    "image": "image4"
+    "image": "image20"
   },
   "8": {
     "message": "Vous n'avez rien trouvé d'intéressant en fouillant la salle",
@@ -202,13 +202,13 @@
     "message": "L'homme gémissant est mort et s'est transformé en Zombie",
     "actionA": "/game/26",
     "messageA": "Attaquer avec votre hache",
-    "image": "image7"
+    "image": "image22"
   },
   "26": {
     "message": "Votre hache reste coincé dans son épaule. Il vous mord",
     "actionA": "/game/lose",
     "messageA": "Suivant",
-    "image": "image7"
+    "image": "image22"
   },
   "27": {
     "message": "Vous avez utilisé le peu de balle que vous aviez pour achever l'homme",
@@ -272,13 +272,13 @@
     "messageA": "Le tuer avec la hache",
     "actionB": "/game/36",
     "messageB": "Passer la salle discrètement",
-    "image": "image16"
+    "image": "image21"
   },
   "35": {
     "message": "Vous lui assenez un coup de hache. il arrive à vous mordre le bras",
     "actionA": "/game/lose",
     "messageA": "Continuer",
-    "image": "image16"
+    "image": "image21"
   },
   "36": {
     "message": "Vous arrivez à passer la salle discrètement et vous finissez par arriver devant des escaliers avec une porte en haut",
@@ -306,13 +306,13 @@
     "messageA": "Passer discrétement",
     "actionB": "/game/42",
     "messageB": "Tuer le Zombie à la hache",
-    "image": "image7"
+    "image": "image24"
   },
   "40": {
     "message": "Vous êtes passé sans vous faire remarquer",
     "actionA": "/game/41",
     "messageA": "Continuer à avancer",
-    "image": "image7"
+    "image": "image24"
   },
   "41": {
     "message": "Vous arrivez devant une porte fermée",
@@ -325,7 +325,7 @@
     "message": "Vous avez tué le zombie avec votre hache sans difficulté",
     "actionA": "/game/41",
     "messageA": "Continuer à avancer",
-    "image": "image7"
+    "image": "image24"
   },
   "43": {
     "message": "En enfoncant la porte votre hache s'est brisée. Vous voyez dans la salle une femme recroquevillée sur elle même dans un coin de la pièce",
@@ -345,19 +345,19 @@
     "messageA": "Lui lancer des livres",
     "actionB": "/game/47",
     "messageB": "le frapper avec une lampe de la bibliothèque",
-    "image": "image7"
+    "image": "image24"
   },
   "46": {
     "message": "Les livres n'ont pas l'air de lui faire mal. Il vous attrape peu après et vous mord",
     "actionA": "/game/lose",
     "messageA": "Suivant",
-    "image": "image7"
+    "image": "image24"
   }, 
   "47": {
     "message": "En le frappant la lampe se brise et n'a eu aucun effet. Il vous mord peu après.",
     "actionA": "/game/lose",
     "messageA": "Suivant",
-    "image": "image7"
+    "image": "image24"
   },
   "48": {
     "message": "Vous repassez par la bibliothèque",
@@ -377,21 +377,24 @@
     "messageA": "Faire diversion avec un objet",
     "actionB": "/game/52",
     "messageB": "passer derrière un meuble",
-    "image": "image16"
+    "image": "image21"
   },
   "51": {
     "message": "Vous lui lancez le premier objet qui vous tombe sous la main. Vous arrivez à passer.",
     "actionA": "/game/win",
-    "messageA": "Sortir"
+    "messageA": "Sortir",
+    "image": "image21"
   },
   "52": {
     "message": "En passant derrière le meuble vous faites tomber un objet, le bruit attire le zombie vers vous",
     "actionA": "/game/53",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image21"
   },
   "53": {
     "message": "Vous n'avez plus d'arme pour vous défendre. Le zombie fini par vous mordre",
     "actionA": "/game/lose",
-    "messageA": "Suivant"
+    "messageA": "Suivant",
+    "image": "image21"
   }
 }
