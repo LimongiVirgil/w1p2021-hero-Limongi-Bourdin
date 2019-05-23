@@ -17,6 +17,10 @@
 
 <style>
 
+h1 {
+  font-size: 20px;
+}
+
 .mute {
   width: 1.5%;
   position: absolute;
@@ -174,11 +178,7 @@ export default {
       } else if (this.$route.params.id === "12") {
         game["lose"].subtitle = "Vous avez finalement tué le zombie mais vous vous êtes transformé en l'une de ces créatures"
       } else if (this.$route.params.id === "18") {
-<<<<<<< HEAD
         game["lose"].subtitle = "Vous avez réussi à tuer un ou deux zombie mais les autres on eu raison de vous, votre corps n'est plus qu'une bouillie d'organes"
-=======
-        game["lose"].subtitle = "Vous avez réussi à tuer un ou deux zombie mais les autres on eu raison de vous, votre corps n'est plus qu'une bouillie d'organes."
->>>>>>> 6e0bdeb577fc2aedcd223f9d7fd3cf38da61db74
       } else if (this.$route.params.id === "26") {
         game["lose"].subtitle = "Finalement vous auriez peut-être du le tuer"
       } else if (this.$route.params.id === "35") {
