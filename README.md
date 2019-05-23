@@ -209,3 +209,9 @@ Notes :
 | Multimédia | L'expérience présente une vidéo ou plus | Non |
 | Multimédia | L'expérience présente un audio ou plus | Oui |
 | Multimédia | L'utilisateur a la possibilité de couper le son à tout moment | Oui |
+
+***
+<div>
+<img src="app/assets/images/Chemin-personnage.jpg">
+</div>
+***

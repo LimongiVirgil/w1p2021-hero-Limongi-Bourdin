@@ -135,7 +135,7 @@ export default {
         if (game[this.id].fille === 'false') {
           game[this.id].fille = "true"
           game[21].message = "Devant vous se trouve la porte de la salle où était la femme disparue",
-          game[21].subtitle = "La porte est enfoncé",
+          game[21].subtitle = "La porte est enfoncée",
           game[21].actionB = "/game/14"
           game[15].subtitle = "Vous pouvez enfoncer la porte",
           game[15].actionA = "/game/win",
@@ -145,14 +145,14 @@ export default {
         game[20].message = "L'homme est maintenant mort, à côté de lui git un chien et une hache",
         game[20].actionB = "",
         game[20].messageB = "",
-        game[22].message = "Vous avez rammasser la hache",
+        game[22].message = "Vous avez rammassé la hache",
         game[22].actionB = "/game/14",
         game[22].messageB = "Faire demi-tour",
         game[27].mort = "true"
       } else if (this.$route.params.id === "32") {
         if (game[this.id].hache === "false") {
           game[this.id].hache = "true",
-          game[this.id].message = "Vous avez déja fouillez cette endroit",
+          game[this.id].message = "Vous avez déja fouillé cette endroit",
           game[33].actionA = "/game/34",
           game[33].messageA = "Enfoncer la porte",
           game[33].subtitle = "Votre hache peut l'enfoncer"
@@ -172,9 +172,9 @@ export default {
           return game[this.id].subtitle
         }
       } else if (this.$route.params.id === "12") {
-        game["lose"].subtitle = "Vous avez finalement tué le zombie mais vous vous êtes transformé en l'une de ses créatures"
+        game["lose"].subtitle = "Vous avez finalement tué le zombie mais vous vous êtes transformé en l'une de ces créatures"
       } else if (this.$route.params.id === "18") {
-        game["lose"].subtitle = "Vous avez réussi à tuer un ou deux zombie mais les autres on eu raison de vous, il ne reste maintenant plus rien de vous."
+        game["lose"].subtitle = "Vous avez réussi à tuer un ou deux zombie mais les autres on eu raison de vous, votre corps n'est plus qu'une bouillie d'organes"
       } else if (this.$route.params.id === "26") {
         game["lose"].subtitle = "Finalement vous auriez peut-être du le tuer"
       } else if (this.$route.params.id === "35") {
