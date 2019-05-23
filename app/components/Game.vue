@@ -1,5 +1,6 @@
 <template>
   <div class="big-header image1" :class="image">
+    <img class="mute" src="../assets/images/mute.svg">
     <h1>{{ message }}</h1>
     <h2>{{ subtitle }}</h2>
     <br>
@@ -13,6 +14,17 @@
     <div>{{ temporalite }}</div>
   </div>
 </template>
+
+<style>
+
+.mute {
+  width: 1.5%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+</style>
 
 <script>
 import game from '../data/data.json';
