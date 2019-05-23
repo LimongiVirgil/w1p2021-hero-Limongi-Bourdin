@@ -203,7 +203,7 @@ Notes :
 | État | Le choix du personnage et/ou de ses caractéristiques impacte l'aventure au moins une fois. **Indiquez ici comment succintement.** | Oui. L'aventure est différente selon le personnage |
 | État | Une décision ou un événement aléatoire survenu pendant l'aventure a un impact sur la suite, au moins une fois. **Indiquez ici comment succintement.** | Oui. Si vous achevez ou non une personne/zombie rencontré |
 | État | Le choix du personnage et/ou ce qu'il s'est passé pendant l'aventure impactent l'écran de fin. **Indiquez ici comment succintement.** | Oui. Un message différent apparait pour chaque mort |
-| État | Au moins un service (classe de type `GameService`) est utilisé | - |
+| État | Au moins un service (classe de type `GameService`) est utilisé | Non |
 | Sauvegarde | Lorsqu'on recharge la page (`Ctrl + R`), le personnage, ses caractéristiques, les choix du joueur et tout le reste sont rétablis | Non |
 | Sauvegarde | Lorsqu'on quitte le jeu et qu'on revient plus tard à la page d'accueil (sur le même navigateur), il est possible de reprendre l'aventure où on l'avait laissée | Non |
 | Multimédia | L'expérience présente une vidéo ou plus | Non |
